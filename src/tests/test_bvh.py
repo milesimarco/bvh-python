@@ -6,7 +6,7 @@ from bvh import Bvh, BvhNode
 class TestBvh(unittest.TestCase):
 
     def test_file_read(self):
-        with open('tests/test_freebvh.bvh') as f:
+        with open('tests/test_freebvh.bvh') as f:z
             mocap = Bvh(f.read())
         self.assertEqual(len(mocap.data), 98838)
 
